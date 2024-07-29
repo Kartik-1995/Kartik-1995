@@ -3,35 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-    <title>Flipkart 1st assignment</title>
+    <title>CSS Grid</title>
+    <style>
+        .nav {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            animation: mymove 2s infinite alternate;
+            
+        }
+
+        @keyframes mymove {
+            from {
+                background-color: olivedrab;
+                width: 200px;
+            }
+            to {
+                background-color: black;
+                width: 400px;
+            }
+        }
+        .aside {
+            background-color: blueviolet;
+            width: 200px;
+            height: 200px;
+        }
+        
+    </style>
 </head>
 <body>
-    <h1><a href = "https://www.flipkart.com">Flipkart</a></h1>
-    <input type = "search" placeholder="Search">
-    <h3><a href = "https://www.flipkart.com">Become a Seller</a></h3>
-    <h3><a href = "https://www.flipkart.com">Cart</a></h3>
-    <!-- Product details-->
-    <div>
-        <hr>
-        <img src ="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRhFbQvArkHbYwI10IwknCxiLYeo28PBmRxXaWQ72xP9RqbMD7XiTvNArPf_Hr6nYTB_mAk_QpA0VKRjpv0dSKbw8MWKl6GibmyJyiYI7WyIRCYOTwAMYRnz2oFRy5192oZPfpYUPDWEg&usqp=CAc" alt= "iPhone 11 White 128 GB" width ="200px" height = "auto">
-        <h3><a href = "https://www.flipkart.com">Apple iPhone 11 (White, 128 GB)</a></h3>
-        <p><b>Rs 44,999 &nbsp;</b><del>Rs,48,889</del>7% off &nbsp;&nbsp;free delivery</p>
-        <p><i>1,81,870 Ratings & 10,713 Reviews</i></p>
-        <br>
-        <p>Upto <b>Rs20,000</b> off on Exchange</p>
-        <ul>
-            <li>128 GB ROM</li>
-            <li>15.49 cm Liquid Retina HD Display</li>
-            <li>12MP + 12MP | 12MP Front Camera</li>
-            <li>A13 Bionic Chip Processor</li>
-        </ul>
-        <hr>
-    </div>
-    <!-- Footer-->
-    <div>
-        <p><a href ="https://www.flipkart.com">About</a>&nbsp;&nbsp;
-        <a href ="https://www.flipkart.com">FAQs</a>&nbsp;&nbsp;
-        <a href ="https://www.flipkart.com">Privacy Policy</a></p>
-    </div>
+    <div class = "nav"></div>
+    <div class = "aside"></div>
 </body>
 </html>
